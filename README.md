@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 金榜名·AI志愿家 官方网站
 
-## Getting Started
+这是金榜名·AI志愿家的官方网站项目，使用Next.js和TailwindCSS构建的现代化、响应式网站。
 
-First, run the development server:
+## 项目简介
+
+金榜名·AI志愿家是一款智能高考志愿填报系统，基于AI深度学习，精准预测录取概率，科学规划人生路。本项目是该系统的官方宣传网站。
+
+## 技术栈
+
+- **Next.js** - React框架，用于构建服务端渲染和静态网站
+- **TailwindCSS** - 实用优先的CSS框架
+- **Framer Motion** - React动画库，提供丰富的视觉交互效果
+- **fullPage.js** - 全屏滚动插件，实现页面无缝切换体验
+- **Tabler Icons** - 开源图标库
+
+## 特性
+
+- 响应式设计，适配移动端和桌面端
+- 现代化UI，清新亮丽的设计风格
+- 流畅的动画过渡效果
+- 优化的SEO配置
+- 丰富的组件化设计
+
+## 开始使用
+
+### 前提条件
+
+- Node.js (版本14.x或更高)
+- npm 或 yarn
+
+### 安装
+
+1. 克隆仓库
+
+```bash
+git clone https://github.com/your-username/aizyj_website.git
+cd aizyj_website
+```
+
+2. 安装依赖
+
+```bash
+npm install
+# 或
+yarn install
+```
+
+3. 启动开发服务器
 
 ```bash
 npm run dev
-# or
+# 或
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. 打开浏览器访问 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 构建生产版本
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# 或
+yarn build
+```
 
-## Learn More
+## 项目结构
 
-To learn more about Next.js, take a look at the following resources:
+```
+aizyj_website/
+├── public/            # 静态资源
+├── src/               # 源代码目录
+│   ├── app/           # Next.js App Router
+│   │   ├── components/ # 组件目录
+│   │   ├── globals.css # 全局样式
+│   │   ├── layout.tsx  # 布局组件
+│   │   └── page.tsx    # 首页
+├── package.json       # 项目配置
+└── README.md          # 项目说明
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 部署
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+该项目可以部署到任何支持Node.js的服务器，推荐使用Vercel进行部署：
 
-## Deploy on Vercel
+```bash
+npm run build
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 许可证
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE)
